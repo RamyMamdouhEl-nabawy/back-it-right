@@ -1,0 +1,47 @@
+.back-right {
+  &__form-btn {
+    min-width: 6rem;
+  }
+
+  &__register-success {
+    font-size: 24px;
+    color: #1c2191;
+  }
+
+  &__fa-check-circle {
+    color: green;
+    font-size: 5rem;
+    display: block;
+    margin: 1.5rem;
+  }
+
+  &__fa-times-circle {
+    color: #b70012;
+    font-size: 5rem;
+    display: block;
+    margin: 1.5rem;
+  }
+
+  &__loader {
+    width: 15rem;
+    height: 15rem;
+  }
+
+  &__loader-logo {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__loader-text {
+    font-size: 30px;
+    color: #191e90;
+  }
+
+  .loading-icon {
+    color: #b70012;
+  }
+
+  .card {
+    border-radius: 10px;
+  }
+}
