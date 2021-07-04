@@ -1,0 +1,15 @@
+.back-right {
+  &__form-btn {
+    min-width: 6rem;
+  }
+
+  &__login-logo {
+    width: 70%;
+    height: auto;
+    // background: url("~/images/Back-it-right-logo.jpg") no-repeat cover;
+  }
+
+  .card {
+    border-radius: 10px;
+  }
+}

@@ -1,0 +1,16 @@
+.back-right__new-repo-input {
+  width: 80% !important;
+  display: inline !important;
+  margin: 0 0.5rem;
+}
+
+.back-right {
+  &__table {
+    max-height: 30.5rem;
+    overflow: auto;
+  }
+
+  &__dt-picker {
+    width: 100%;
+  }
+}
