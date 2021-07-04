@@ -21,7 +21,7 @@ const SignUp = () => {
     setFormData((prevState) => {
       return {
         ...prevState,
-        [name]: value,
+        [name]: value
       };
     });
   };
@@ -39,10 +39,10 @@ const SignUp = () => {
         config: {
           headers: {
             Accept: "application/json",
-            "Content-Type": "application/json",
+            "Content-Type": "application/json"
             // "Access-Control-Allow-Origin": "*",
-          },
-        },
+          }
+        }
       });
 
       if (response.status === 200) {
@@ -86,10 +86,7 @@ const SignUp = () => {
                     />
                   </Col>
                   <Col xs="auto text-start">
-                    <Form.Label
-                      className="col-2"
-                      htmlFor="inlineFormInputGroup2"
-                    >
+                    <Form.Label className="col-2" htmlFor="inlineFormInputGroup2">
                       Password
                     </Form.Label>
                     <Form.Control
@@ -117,17 +114,11 @@ const SignUp = () => {
                   </Col>
 
                   <Col xs="auto">
-                    <Button
-                      type="submit"
-                      className="btn btn-primary back-right__form-btn mx-3"
-                    >
+                    <Button type="submit" className="btn btn-primary back-right__form-btn mx-3">
                       Sign Up
                     </Button>
 
-                    <Button
-                      type="reset"
-                      className="btn btn-primary back-right__form-btn mx-3"
-                    >
+                    <Button type="reset" className="btn btn-primary back-right__form-btn mx-3">
                       Reset
                     </Button>
                   </Col>
@@ -156,9 +147,7 @@ const SignUp = () => {
             </div>
           ) : (
             <div className="card-body">
-              <i
-                className={`fas ${msgIcon} text-center back-right__${msgIcon}`}
-              ></i>
+              <i className={`fas ${msgIcon} text-center back-right__${msgIcon}`}></i>
               <span className="back-right__register-success">{successMsg}</span>
             </div>
           )}

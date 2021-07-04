@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import axios from "axios";
 import ProjectsList from "../reusableComponents/ProjectsList";
 import { Button } from "react-bootstrap";
@@ -6,6 +5,7 @@ import Switch from "react-switch";
 
 import "./styles.scss";
 import AuthProvider from "../AuthProvider";
+import { useEffect, useState } from "react";
 
 const Home = (props) => {
   const baseUrl = "http://backitright.pythonanywhere.com";

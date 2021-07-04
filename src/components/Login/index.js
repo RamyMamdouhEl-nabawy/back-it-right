@@ -19,7 +19,7 @@ const Login = (props) => {
     setFormData((prevState) => {
       return {
         ...prevState,
-        [name]: value,
+        [name]: value
       };
     });
   };
@@ -43,7 +43,7 @@ const Login = (props) => {
           hideProgressBar: false,
           closeOnClick: true,
           pauseOnHover: true,
-          draggable: false,
+          draggable: false
         });
       }
     }
@@ -92,10 +92,7 @@ const Login = (props) => {
                 </Col>
 
                 <Col xs="auto">
-                  <Button
-                    type="submit"
-                    className="btn btn-primary back-right__form-btn mx-3"
-                  >
+                  <Button type="submit" className="btn btn-primary back-right__form-btn mx-3">
                     Log In
                   </Button>
                 </Col>

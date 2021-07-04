@@ -1,10 +1,10 @@
-import React, { useEffect, useRef, useState } from "react";
 import axios from "axios";
 import AuthProvider from "../../AuthProvider";
 import { Table } from "react-bootstrap";
 import { Scrollbars } from "react-custom-scrollbars";
 
 import "./styles.scss";
+import { useRef, useState } from "react";
 
 const ProjectsList = (props) => {
   const {
