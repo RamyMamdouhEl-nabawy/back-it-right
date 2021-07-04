@@ -13,10 +13,10 @@ const ProjectsList = (props) => {
     organizations,
     projects,
     backups,
-    planData,
     onRepoChange,
     onTimeJobChange,
-    onRepoNameChange
+    onRepoNameChange,
+    onProjectsSelectionChange
   } = props;
   const baseUrl = "http://backitright.pythonanywhere.com";
   const token = accessToken;
@@ -52,12 +52,6 @@ const ProjectsList = (props) => {
     const reposList = list.map((backup) => backup.backups);
     console.log(reposList);
     setRepoBackups(reposList);
-  };
-
-  const handleProjectsList = (e) => {
-    const selectedProject = e.checked;
-    // const projectsList = ;
-    // selectedProject ? ;
   };
 
   const handleNewRepo = (btn) => {
@@ -127,7 +121,12 @@ const ProjectsList = (props) => {
                       type="checkbox"
                       // name="projects"
                       value={project.project}
-                      onChange={(e) => handleProjectsList(e.target)}
+                      onChange={(e) =>
+                        onProjectsSelectionChange({
+                          id: project.project,
+                          checked: e.target.checked
+                        })
+                      }
                     />
                   </td>
                   <td>{project.project}</td>
